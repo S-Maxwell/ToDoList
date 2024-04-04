@@ -1,9 +1,14 @@
-body {
+.hidden {
+  display: none;  
+}
+
+html, body {
     background-color: black;
     /* these properties will be inherited by children elements */
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    height: 100%;
 }
 
 main {
@@ -61,14 +66,26 @@ ul li {
     text-transform: uppercase;
 }
 
-.todo li:nth-child(odd) {
- background-color: rgba(255, 255, 255, 0.2);
+.toppriorities li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.inprogress li:nth-child(odd) {
+.appointments li:nth-child(odd) {
     background-color: rgba(255, 0, 0, 0.5);
 }
 
-.done li:nth-child(odd) {
+.exercise li:nth-child(odd) {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.reminders li:nth-child(odd) {
+ background-color: rgba(255, 255, 255, 0.2);
+}
+
+.todo li:nth-child(odd) {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.notes li:nth-child(odd) {
     background-color: rgba(0, 255, 0, 0.5);
 }
