@@ -4,9 +4,9 @@
 
 html, body {
     /* these properties will be inherited by children elements */
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
     background-image:url(../img/Simple\ Texture\ Gradient\ Background\ Wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,7 @@ main {
 
 #main-logo {
     width: 1300px;
+    height: 400px;
 }
 
 header > h1 {
@@ -38,28 +39,58 @@ section {
 }
 
 section > h2 {
-    color: gray;
+    color: red;
     padding: 4px 8px;
 }
 
-section:first-of-type {
-    border: 4px solid gray;
-}
+
 
 /* the id has a higher specificity, so it beats out the section selector */
-#inprogress {
+#toppriorities {
     border: 4px solid red;
 }
 
-#inprogress h2 {
+#toppriorities h2 {
     color: red;
 }
 
-#done {
+#appointments {
     border: 4px solid green;
 }
 
-#done > h2 {
+#appointments > h2 {
+    color: green;
+}
+
+#exercise {
+    border: 4px solid red;
+}
+
+#exercise h2 {
+    color: red;
+}
+
+#reminders {
+    border: 4px solid green;
+}
+
+#reminders > h2 {
+    color: green;
+}
+
+#todo {
+    border: 4px solid red;
+}
+
+#todo h2 {
+    color: red;
+}
+
+#notes {
+    border: 4px solid green;
+}
+
+#notes > h2 {
     color: green;
 }
 
@@ -111,6 +142,6 @@ footer {
 }
 
 input[type="checkbox"]:checked + span::after {
-    content:"✔️";
+    content:"❤️";
     margin-left: 5px;
 }
